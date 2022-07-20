@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+        <div class="container">
+        <div class="row">
+            <!-- Tính lương nhân viên -->
+
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div class="card-header text-center bg-warning body-text">
+                        Tính lương nhân viên
+                    </div>
+                    <div class="card-body">
+                        <div class="form-inline">
+                            <label>Lương một ngày</label>
+                            <input id="luongNgay" type="number" class="form-control">
+                        </div>
+
+                        <div class="form-inline">
+                            <label>Số ngày làm việc</label>
+                            <input id="soNgay" type="number" class="form-control">
+                        </div>
+
+                        <button id="btnTinhLuong" type="button" class="btn btn-primary mt-3" style="margin-left: 100px;">Tính lương</button>
+                    </div>
+                    <div id="showLuong" class="card-footer">kết quả</div>
+                </div>
+            </div>
+
+            <!-- Tính giá trị trung bình -->
+
+            <div class="col-md-4 ">
+                <div class="card mt-4">
+                    <div class="card-header bg-danger text-center text-white">Tính giá trị trung bình</div>
+                    <div class="card-body">
+                        <form class="form-inline">
+                            <div class="form-inline">
+                                <label for="">Số thứ nhất</label>
+                                <input type="number" id="number1" class="form-control ml-2">
+                            </div>
+                        </form>
+
+                        <form class="form-inline mt-3">
+                            <div class="form-group">
+                                <label for="">Số thư hai</label>
+                                <input type="number" id="number2" class="form-control ml-3">
+                            </div>
+                        </form>
+
+                        <form class="form-inline  mt-3">
+                            <div class="form-group">
+                                <label for="">Số thứ ba</label>
+                                <input type="number" id="number3" class="form-control ml-3">
+                            </div>
+                        </form>
+
+                        <form class="form-inline mt-3">
+                            <div class="form-group">
+                                <label for="">Số thứ tư</label>
+                                <input type="number" id="number4" class="form-control ml-3">
+                            </div>
+                        </form>
+
+                        <form class="form-inline mt-3">
+                            <div class="form-group">
+                                <label for="">Số thứ năm</label>
+                                <input type="number" id="number5" class="form-control ml-1">
+                            </div>
+                        </form>
+                        <div style="padding-left: 75px ;">
+                            <button id="btnGiaTriTB" class="btn btn-primary mt-3">Giá trị trung bình</button>
+                        </div>
+                    </div>
+                    <div id="showGiaTriTB" class="card-footer ">Kết quả</div>
+                </div>
+            </div>
+
+            <!-- Quy đôi tiền -->
+
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div class="card-header text-center bg-primary text-white">
+                        Quy đổi tiền
+                    </div>
+                    <div class="card-body">
+                        <form class="form-inline">
+                            <div class="form-group ">
+                                <label for="">Tiền USD</label>
+                                <input type="number" id="money" class="form-control ml-4" placeholder="">
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="">Tỉ giá</label>
+                                <input type="number" id="rate" class="form-control ml-5" placeholder="">
+                            </div>
+                        </form>
+                        <button style="margin-left: 135px;" id="btn-changed" class="btn btn btn-primary mt-3">Quy
+                            đổi</button>
+                    </div>
+                    <div id="showChanged" class="card-footer">Kết quả</div>
+                </div>
+            </div>
+
+            <!-- Diện tích và chu vi hình chữ nhật -->
+
+            <div class="col-md-6 mt-5">
+                <div class="card ">
+                    <div class="card-header text-center bg-info text-white">Diện tích và chu vi hình chữ nhật</div>
+                    <div class="card-body">
+                        <form class="form-inline">
+                            <div class="form-group mt-2">
+                                <label for="">Chiều dài</label>
+                                <input type="number" id="longEdge" class="form-control ml-4">
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="">Chiều rộng</label>
+                                <input type="number" id="shortEdge" class="form-control ml-3">
+                            </div>
+                        </form>
+                        <button id="areaPerimeter" type="button" class="btn btn-outline-warning mt-3 "
+                            style="margin-left: 100px;">Diện tích & Chu vi HCN</button>
+                    </div>
+                    <div id="showAreaPerimeter" class="card-footer">Kết quả</div>
+                </div>
+            </div>
+
+            <!-- Tổng hai ký số -->
+
+            <div class="col-md-6 mt-5">
+                <div class="card">
+                    <div class="card-header text-center text-white bg-primary">
+                        Tổng hai ký số
+                    </div>
+                    <div class="card-body">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="">Số có hai ký số</label>
+                                <input type=" number" id="twoDigitNumber" class="form-control ml-4" >                                
+                            </div>
+                        </form>
+                        <button id="btnTotal" type="button" class="btn btn-outline-danger mt-4" style="margin-left: 185px;">Tổng hai chữ số</button>
+                    </div>
+                    <div id="showTotal" class="card-footer">Kết quả</div>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- main Js -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
